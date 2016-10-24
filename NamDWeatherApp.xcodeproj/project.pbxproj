@@ -13,6 +13,9 @@
 		9351CA911DB55D0000A28E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9351CA8F1DB55D0000A28E44 /* Main.storyboard */; };
 		9351CA931DB55D0000A28E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9351CA921DB55D0000A28E44 /* Assets.xcassets */; };
 		9351CA961DB55D0000A28E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9351CA941DB55D0000A28E44 /* LaunchScreen.storyboard */; };
+		9351CA9E1DB55D1400A28E44 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9351CA9D1DB55D1300A28E44 /* MapKit.framework */; };
+		9351CAA01DB55D2000A28E44 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9351CA9F1DB55D2000A28E44 /* CoreLocation.framework */; };
+		936610AF1DB919F1008BC279 /* forecastViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936610AE1DB919F1008BC279 /* forecastViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		9351CA921DB55D0000A28E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9351CA951DB55D0000A28E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9351CA971DB55D0000A28E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9351CA9D1DB55D1300A28E44 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9351CA9F1DB55D2000A28E44 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		936610AD1DB919F1008BC279 /* forecastViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forecastViewCell.h; sourceTree = "<group>"; };
+		936610AE1DB919F1008BC279 /* forecastViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forecastViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9351CAA01DB55D2000A28E44 /* CoreLocation.framework in Frameworks */,
+				9351CA9E1DB55D1400A28E44 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 		9351CA7A1DB55D0000A28E44 = {
 			isa = PBXGroup;
 			children = (
+				9351CA9F1DB55D2000A28E44 /* CoreLocation.framework */,
+				9351CA9D1DB55D1300A28E44 /* MapKit.framework */,
 				9351CA851DB55D0000A28E44 /* NamDWeatherApp */,
 				9351CA841DB55D0000A28E44 /* Products */,
 			);
@@ -62,11 +73,13 @@
 				9351CA8A1DB55D0000A28E44 /* AppDelegate.m */,
 				9351CA8C1DB55D0000A28E44 /* ViewController.h */,
 				9351CA8D1DB55D0000A28E44 /* ViewController.m */,
+				936610AD1DB919F1008BC279 /* forecastViewCell.h */,
+				936610AE1DB919F1008BC279 /* forecastViewCell.m */,
 				9351CA8F1DB55D0000A28E44 /* Main.storyboard */,
+				9351CA861DB55D0000A28E44 /* Supporting Files */,
 				9351CA921DB55D0000A28E44 /* Assets.xcassets */,
 				9351CA941DB55D0000A28E44 /* LaunchScreen.storyboard */,
 				9351CA971DB55D0000A28E44 /* Info.plist */,
-				9351CA861DB55D0000A28E44 /* Supporting Files */,
 			);
 			path = NamDWeatherApp;
 			sourceTree = "<group>";
@@ -152,6 +165,7 @@
 				9351CA8E1DB55D0000A28E44 /* ViewController.m in Sources */,
 				9351CA8B1DB55D0000A28E44 /* AppDelegate.m in Sources */,
 				9351CA881DB55D0000A28E44 /* main.m in Sources */,
+				936610AF1DB919F1008BC279 /* forecastViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +316,7 @@
 				9351CA9C1DB55D0000A28E44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
